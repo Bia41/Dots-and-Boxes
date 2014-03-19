@@ -1,0 +1,4 @@
+(ignore-value (setf j1 (cria-jogo t1)))
+(setf jogada (jogador-minimax-simples j1 1 30))
+(ignore-value (setf j2 (resultado j1 jogada)))
+(jogador-minimax-simples j2 (jogo-jogador j2) 30)

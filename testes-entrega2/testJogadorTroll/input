@@ -1,0 +1,4 @@
+(make-package 'oponentes)
+(load "oponentes.fas")
+(compara t7 #'jogador-minimax-vbest #'oponentes::Troll 10 :silencioso T)
+(compara t3 #'jogador-minimax-vbest #'oponentes::Troll 10 :silencioso T)

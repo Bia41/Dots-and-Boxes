@@ -1,0 +1,3 @@
+(ignore-value (setf j1 (cria-jogo t1)))
+(ignore-value (setf p1 (make-problema :estado-inicial j1 :jogador #'jogo-jogador :accoes #'accoes :resultado #'resultado :teste-corte-p #'teste-terminal-p :funcao-avaliacao #'utilidade)))
+(multiple-value-list (minimax p1 1))

@@ -1,0 +1,5 @@
+(ignore-value (tabuleiro-remove-fio-com-id! t3 13))
+(ignore-value (setf l1 (list (cria-fio 1 (cria-posicao 0 1) (cria-posicao 0 0)) (cria-fio 2 (cria-posicao 1 0) (cria-posicao 0 0)) (cria-fio 3 (cria-posicao 1 1) (cria-posicao 0 0)) (cria-fio 4 (cria-posicao 1 0) (cria-posicao 0 1)) (cria-fio 5 (cria-posicao 0 1) (cria-posicao 1 1)) (cria-fio 6 (cria-posicao 1 0) (cria-posicao 1 1)) (cria-fio 7 (cria-posicao 1 2) (cria-posicao 0 1)) (cria-fio 8 (cria-posicao 1 1) (cria-posicao 1 2)) (cria-fio 9 (cria-posicao 0 1) (cria-posicao 0 2)) (cria-fio 10 (cria-posicao 0 2) (cria-posicao 1 2)) (cria-fio 11 (cria-posicao 1 1) (cria-posicao 0 2)))))
+(length (tabuleiro-fios t3))
+(conjuntos-iguais-p (tabuleiro-fios t3) l1 :test #'fios-iguais-p)
+(desenha-tabuleiro t3)

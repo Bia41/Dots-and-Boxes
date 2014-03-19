@@ -1,0 +1,4 @@
+(ignore-value (setf temp-t1 (cria-tabuleiro 4 5)))
+(ignore-value (tabuleiro-adiciona-moeda-posicao! temp-t1 (cria-posicao 3 4) 5))
+(tabuleiro-moeda-posicao temp-t1 (cria-posicao 3 4))
+(desenha-tabuleiro temp-t1) 

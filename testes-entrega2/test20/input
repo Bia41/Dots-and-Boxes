@@ -1,0 +1,18 @@
+;;este teste e importante para testar se o vosso projecto vai funcionar para o torneiro!!!!!!
+;;basicamente substituimos a definicao dos vossos tipos por outra implementacao, e todos os vossos algoritmos minimax/alfa-beta/vbest e heuristicas
+;;devem funcionar correctamente 
+;;E possivel falhar este teste e ter boa nota no projecto na mesma, pois para jogar contra os oponentes na avaliacao automatica e usada a vossa implementacao
+;;dos tipos. No entanto, quem nao passar este teste nao ira participar no torneio!!!!!
+;;Tive que refazer este teste, pois havia problema ao fazer este teste com a versao compilada dos ficheiros por causa de compilacoes inline utilizadas
+;;pelas estruturas em LISP
+(make-package 'teste)
+(in-package teste)
+(load "projecto-alunos.lisp")
+(load "tipos.lisp") ;; vai substituir a definicao dos tipos dos alunos pela do corpo docente
+(load "exemplos.lisp")
+(setf j1 (cria-jogo t1))
+(CL-USER::ignore-value (setf p1 (make-problema :estado-inicial j1 :jogador #'jogo-jogador :accoes #'accoes :resultado #'resultado :teste-corte-p #'teste-terminal-p :funcao-avaliacao #'utilidade)))
+(multiple-value-list (minimax p1 1))
+(multiple-value-list (minimax-alfa-beta p1 1))
+(jogador-minimax-simples j1 1 10)
+(not (null (member (jogador-minimax-vbest j1 1 10) '(2 5))))

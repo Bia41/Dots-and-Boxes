@@ -1,0 +1,3 @@
+(posicoes-iguais-p (cria-posicao 4 5) (cria-posicao 4 5))
+(posicoes-iguais-p (cria-posicao 4 5) (cria-posicao 5 4))
+(posicoes-iguais-p (cria-posicao 0 0) (cria-posicao 0 4))

@@ -1,0 +1,2 @@
+(tabuleiro-linhas (cria-tabuleiro 4 5))
+(tabuleiro-colunas (cria-tabuleiro 4 5))

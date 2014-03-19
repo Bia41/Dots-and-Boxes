@@ -1,0 +1,8 @@
+(ignore-value (setf j1 (cria-jogo t8)))
+(ignore-value (setf tempo-inicio (get-internal-real-time)))
+(ignore-value (jogador-minimax-vbest j1 1 15))
+(<= (tempo-decorrido tempo-inicio) 15)
+(ignore-value (setf j2 (cria-jogo t10)))
+(ignore-value (setf tempo-inicio (get-internal-real-time)))
+(ignore-value (jogador-minimax-vbest j2 1 5))
+(<= (tempo-decorrido tempo-inicio) 5)

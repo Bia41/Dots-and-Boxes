@@ -1,0 +1,2 @@
+(fio-p (list 18 20))
+(fio-p (cria-fio 5 (cria-posicao 0 0) (cria-posicao 0 1)))

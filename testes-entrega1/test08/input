@@ -1,0 +1,3 @@
+(tabuleiro-fios (cria-tabuleiro 4 5))
+(tabuleiro-fio-com-id (cria-tabuleiro 4 5) 3)
+(tabuleiro-fios-posicao (cria-tabuleiro 4 5) (cria-posicao 0 0))

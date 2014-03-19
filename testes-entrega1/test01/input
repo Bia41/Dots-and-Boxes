@@ -1,0 +1,2 @@
+(posicao-p (cria-posicao 3 6))
+(posicao-p 3)

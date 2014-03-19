@@ -1,0 +1,2 @@
+(jogo-terminado-p (cria-jogo t3))
+(jogo-terminado-p (cria-jogo (cria-tabuleiro 3 3)))

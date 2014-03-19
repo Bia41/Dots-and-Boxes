@@ -1,0 +1,7 @@
+(ignore-value (setf j1 (cria-jogo t5)))
+(ignore-value (jogo-aplica-jogada! j1 15))
+(desenha-jogo j1)
+(ignore-value (jogo-aplica-jogada! j1 2))
+(desenha-jogo j1)
+(jogo-jogador j1)
+(jogo-historico-jogadas j1)
